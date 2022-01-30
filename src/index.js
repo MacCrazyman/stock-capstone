@@ -5,8 +5,9 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
 import store from './app/store';
-import Companies from './components/companies';
+import Indexes from './components/indexes';
 import Details from './components/details';
+import NoPage from './components/noMatch';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,8 +15,9 @@ ReactDOM.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />}>
-            <Route index element={<Companies />} />
-            <Route path="details" element={<Details />} />
+            <Route index element={<Indexes />} />
+            <Route path=":details" element={<Details />} />
+            <Route path="*" element={<NoPage/>} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -1,7 +1,7 @@
-const Companies = () => (
+const Indexes = () => (
   <div>
     <h2>Companies section!</h2>
   </div>
 );
 
-export default Companies;
+export default Indexes;
