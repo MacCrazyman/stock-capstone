@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import stockRedurec from '../redux/reducer';
+import stockReducer from '../redux/reducer';
 
 const store = configureStore({
   reducer: {
-    companies: stockRedurec,
+    companies: stockReducer,
   },
   middleware: [logger, thunk],
 });

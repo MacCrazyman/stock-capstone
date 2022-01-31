@@ -1,8 +1,8 @@
 const initialState = [];
-const stockRedurec = (state = initialState, action) => {
+const stockReducer = (state = initialState, action) => {
   switch (action.type) {
     case ('LOAD_COMPANIES'): {
-      return state;
+      return action.payload;
     }
     default: {
       return state;
@@ -12,7 +12,7 @@ const stockRedurec = (state = initialState, action) => {
 
 export const loadCompanies = (payload) => ({
   type: 'LOAD_COMPANIES',
-  action: payload,
+  payload,
 });
 
-export default stockRedurec;
+export default stockReducer;
