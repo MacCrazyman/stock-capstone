@@ -15,9 +15,10 @@ ReactDOM.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />}>
-            <Route index element={<Indexes />} />
-            <Route path=":details" element={<Details />} />
-            <Route path="*" element={<NoPage/>} />
+            <Route path="index" element={<Indexes />}>
+              <Route path=":indexID" element={<Details />} />
+            </Route>
+            <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

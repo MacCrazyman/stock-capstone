@@ -6,8 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NavLink to="/"> Home</NavLink>
-        <NavLink to="details"> Details</NavLink>
+        <NavLink to="index"> Home</NavLink>
       </header>
       <main>
         <Outlet />
