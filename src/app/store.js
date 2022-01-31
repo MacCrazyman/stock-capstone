@@ -1,8 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import logger from 'redux-logger';
+import thunk from 'redux-thunk';
+import stockReducer from '../redux/reducer';
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    companies: stockReducer,
   },
+  middleware: [logger, thunk],
 });
+
+export default store;
