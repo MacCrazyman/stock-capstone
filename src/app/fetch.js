@@ -5,9 +5,7 @@ const companyEndpoint = 'quote/';
 
 const getCompanies = () => fetch(API + nasdaqEndpoint + apiKey).then((response) => response.json());
 
-export const getInfo = async (companySymbol) => {
-  const response = await fetch(API + companyEndpoint + companySymbol + apiKey);
-  return response.json();
-};
+export const getInfo = (companySymbol) => fetch(API + companyEndpoint + companySymbol + apiKey)
+  .then((response) => response.json());
 
 export default getCompanies;

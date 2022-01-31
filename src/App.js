@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NavLink to="index"> Home</NavLink>
+        <NavLink to="/"> Home</NavLink>
       </header>
       <main>
         <Outlet />
