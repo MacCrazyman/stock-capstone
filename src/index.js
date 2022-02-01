@@ -8,7 +8,7 @@ import store from './app/store';
 import Indexes from './components/indexes';
 import Details from './components/details';
 import NoPage from './components/noMatch';
-import './fonts/gill_sans/Gill Sans.otf';
+import './fonts/gillsans/gillsans.ttf';
 
 ReactDOM.render(
   <React.StrictMode>
