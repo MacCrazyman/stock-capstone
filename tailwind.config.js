@@ -4,6 +4,11 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      blue: '#4369B2',
+      blue2: '#598AE7',
+      'blue-dark': '#3B5A9A',
+    },
   },
   plugins: [],
 };

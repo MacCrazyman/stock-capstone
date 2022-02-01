@@ -15,8 +15,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <NavLink to="/"> Home</NavLink>
+      <header className="App-header mx-auto bg-blue flex px-4">
+        <NavLink to="/"> &#60; </NavLink>
+        <h2 className="mx-auto"> Companies </h2>
       </header>
       <main>
         <Outlet />
