@@ -15,13 +15,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header mx-auto bg-blue flex px-4">
-        <NavLink to="/"> &#60; </NavLink>
-        <h2 className="mx-auto"> Companies </h2>
+        <NavLink to="/" className="flex w-full">
+          <p>&#60;</p>
+          <h2 className="m-auto"> Companies </h2>
+        </NavLink>
       </header>
       <main>
         {companiesStore.length !== 0 ? <Outlet /> : 'Loading Data...'}
       </main>
-      <footer>
+      <footer className="bg-blue-dark fixed bottom-0 w-full">
         CC License
       </footer>
     </div>

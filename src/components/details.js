@@ -16,9 +16,33 @@ const Details = () => {
     dispatch(loadDetails(companyInfo[0]));
   }, []);
   return (
-    <div>
-      <h2>{symbol}</h2>
-      <p>{company.name}</p>
+    <div className="bg-blue2">
+      <div className="grid grid-cols-2 p-4">
+        <div className="m-auto">
+          <p className="font-extrabold text-7xl text-blue-dark">
+            {symbol}
+          </p>
+        </div>
+        <div className="text-right">
+          <h2 className="my-auto uppercase font-extrabold">
+            {company.name}
+          </h2>
+          <p>
+            {company.headQuarter}
+          </p>
+          <p className="">
+            {'$ '}
+            {Number(company.details.avgVolume).toLocaleString('en')}
+          </p>
+        </div>
+        <div />
+      </div>
+      <h3 className="text-left bg-blue-dark px-2 uppercase">
+        Details of
+        {' '}
+        {company.name}
+      </h3>
+
     </div>
   );
 };
