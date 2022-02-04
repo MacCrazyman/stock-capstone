@@ -25,7 +25,7 @@ function App() {
           <span className="w-4 h-4 bg-gear bg-cover my-auto" />
         </NavLink>
       </header>
-      <main>
+      <main className="w-full">
         {companiesStore.length !== 0 ? <Outlet /> : 'Loading Data...'}
       </main>
       <footer className="bg-blue-dark fixed bottom-0 w-full">
