@@ -15,6 +15,7 @@ module.exports = {
       'blue-dark': '#3B5A9A',
       'odd-blue': '#4268B1',
       'even-blue': '#3F62A4',
+      back: '#000000',
     },
   },
   plugins: [],
