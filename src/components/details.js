@@ -17,11 +17,11 @@ const Details = () => {
   }, []);
   if (company.details === undefined) return <div className="bg-blue-dark h-full m-auto">Loading...</div>;
   return (
-    <div className="bg-blue2">
-      <div className="fixed top-4 bg-blue2 pt40">
+    <div className="bg-blue2 pt-40">
+      <div className="fixed top-6 bg-blue2 w-full">
         <div className="grid grid-cols-2 p-4 py-8">
           <div className="m-auto">
-            <p className="font-extrabold text-7xl text-blue-dark">
+            <p className="font-extrabold text-6xl text-blue-dark">
               {symbol}
             </p>
           </div>
@@ -37,7 +37,6 @@ const Details = () => {
               {Number(company.details.avgVolume).toLocaleString('en')}
             </p>
           </div>
-          <div />
         </div>
         <h3 className="text-left bg-blue-dark px-2 uppercase">
           Details of

@@ -8,7 +8,6 @@ import store from './app/store';
 import Indexes from './components/indexes';
 import Details from './components/details';
 import NoPage from './components/noMatch';
-// import './fonts/gillsans/gillsans.ttf';
 
 ReactDOM.render(
   <React.StrictMode>

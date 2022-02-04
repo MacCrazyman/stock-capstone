@@ -3,19 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-  font-family: "GillSans";
-  src:
-    local("gillsans"),
-    url("./fonts/gillsans/gillsans.ttf") format('truetype');
-} */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
-
 body {
   margin: 0;
   font-family:
-    /* 'GillSans', */
     'Lato',
     -apple-system,
     BlinkMacSystemFont,
