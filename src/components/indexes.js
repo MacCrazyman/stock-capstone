@@ -8,7 +8,7 @@ const Indexes = () => {
     <div className="grid grid-cols-2 bg-blue2">
 
       <div className="w-40 mx-auto p-4"><img className="w-full" src={nasdaqLogo} alt="Nasdaq Logo" /></div>
-      <div className="m-auto">
+      <div className="my-auto p-4 text-left">
         <h2 className="m-auto uppercase font-extrabold">Nasdaq companies!</h2>
         <p className="m-auto capitalize">
           {companies.length}

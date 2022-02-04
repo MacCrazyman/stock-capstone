@@ -15,9 +15,10 @@ const Details = () => {
     const companyInfo = await getInfo(symbol);
     dispatch(loadDetails(companyInfo[0]));
   }, []);
+  if (company.details === undefined) return <div className="bg-blue-dark h-full m-auto">Loading...</div>;
   return (
     <div className="bg-blue2">
-      <div className="grid grid-cols-2 p-4">
+      <div className="grid grid-cols-2 p-4 py-8">
         <div className="m-auto">
           <p className="font-extrabold text-7xl text-blue-dark">
             {symbol}
@@ -42,6 +43,15 @@ const Details = () => {
         {' '}
         {company.name}
       </h3>
+      {Object.keys(company.details).map((detailKey, index) => (
+        <div key={detailKey} className={`${index % 2 === 0 ? 'bg-odd-blue' : 'bg-even-blue'} grid grid-cols-2 py-6`}>
+          <p className="capitalize text-left px-2">{detailKey}</p>
+          <p className="text-right px-2">
+            {company.details[detailKey]}
+            <span className="pl-6">&#10162;</span>
+          </p>
+        </div>
+      ))}
 
     </div>
   );
