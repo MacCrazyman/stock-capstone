@@ -4,7 +4,7 @@ import './index.css';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
-import store from './app/store';
+import store from './redux/store';
 import Indexes from './components/indexes';
 import Details from './components/details';
 import NoPage from './components/noMatch';

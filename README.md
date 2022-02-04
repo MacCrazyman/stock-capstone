@@ -18,6 +18,8 @@ Project created using `create-react-app` and implementing `react-redux` to retre
 
 [Live Demo Link](https://stock-capstone.herokuapp.com/)
 
+[Explanatory video](https://drive.google.com/file/d/1tu6x65IFPv1Dd-NZyDcdi3JUgugpPrqK/view)
+
 
 ## Getting Started
 
