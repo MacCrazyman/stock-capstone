@@ -18,31 +18,33 @@ const Details = () => {
   if (company.details === undefined) return <div className="bg-blue-dark h-full m-auto">Loading...</div>;
   return (
     <div className="bg-blue2">
-      <div className="grid grid-cols-2 p-4 py-8">
-        <div className="m-auto">
-          <p className="font-extrabold text-7xl text-blue-dark">
-            {symbol}
-          </p>
+      <div className="fixed top-4 bg-blue2 pt40">
+        <div className="grid grid-cols-2 p-4 py-8">
+          <div className="m-auto">
+            <p className="font-extrabold text-7xl text-blue-dark">
+              {symbol}
+            </p>
+          </div>
+          <div className="text-right">
+            <h2 className="my-auto uppercase font-extrabold">
+              {company.name}
+            </h2>
+            <p>
+              {company.headQuarter}
+            </p>
+            <p className="">
+              {'$ '}
+              {Number(company.details.avgVolume).toLocaleString('en')}
+            </p>
+          </div>
+          <div />
         </div>
-        <div className="text-right">
-          <h2 className="my-auto uppercase font-extrabold">
-            {company.name}
-          </h2>
-          <p>
-            {company.headQuarter}
-          </p>
-          <p className="">
-            {'$ '}
-            {Number(company.details.avgVolume).toLocaleString('en')}
-          </p>
-        </div>
-        <div />
+        <h3 className="text-left bg-blue-dark px-2 uppercase">
+          Details of
+          {' '}
+          {company.name}
+        </h3>
       </div>
-      <h3 className="text-left bg-blue-dark px-2 uppercase">
-        Details of
-        {' '}
-        {company.name}
-      </h3>
       {Object.keys(company.details).map((detailKey, index) => (
         <div key={detailKey} className={`${index % 2 === 0 ? 'bg-odd-blue' : 'bg-even-blue'} grid grid-cols-2 py-6`}>
           <p className="capitalize text-left px-2">{detailKey}</p>

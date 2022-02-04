@@ -13,8 +13,8 @@ function App() {
     dispatch(loadCompanies(companies));
   }, []);
   return (
-    <div className="App">
-      <header className="App-header mx-auto bg-blue flex px-4">
+    <div className="App pt-6">
+      <header className="App-header mx-auto bg-blue flex px-4 fixed top-0 w-full z-10">
         <NavLink to="/" className="flex w-full">
           <p>&#60;</p>
           <h2 className="m-auto">
