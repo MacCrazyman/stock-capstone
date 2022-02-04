@@ -17,7 +17,8 @@ const Indexes = () => {
       </div>
       <h3 className="col-span-full text-left bg-blue-dark px-2 uppercase">List of companies</h3>
       {companies.slice(0, 98).map((company, index) => (
-        <Link to={company.symbol} key={company.name} className={`${(index + 2) % 4 === 0 || (index + 3) % 4 === 0 ? 'bg-odd-blue' : 'bg-even-blue'} grid grid-rows-3`}>
+        <Link to={company.symbol} key={company.name} className={`${(index + 2) % 4 === 0 || (index + 3) % 4 === 0 ? 'bg-odd-blue' : 'bg-even-blue'} grid grid-rows-3 relative`}>
+          <div className="absolute top-0 right-0 p-2">&#10162;</div>
           <div className="m-auto row-span-2">
             <p className="font-extrabold text-7xl text-blue2">
               {company.symbol}

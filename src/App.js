@@ -17,7 +17,12 @@ function App() {
       <header className="App-header mx-auto bg-blue flex px-4">
         <NavLink to="/" className="flex w-full">
           <p>&#60;</p>
-          <h2 className="m-auto"> Companies </h2>
+          <h2 className="m-auto">
+            {' '}
+            Companies
+          </h2>
+          <span className="w-4 h-4 bg-microphone bg-cover my-auto mr-6" />
+          <span className="w-4 h-4 bg-gear bg-cover my-auto" />
         </NavLink>
       </header>
       <main>

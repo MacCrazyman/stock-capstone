@@ -3,7 +3,12 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        microphone: "url('./img/microphone.svg')",
+        gear: "url('./img/gear.svg')",
+      },
+    },
     colors: {
       blue: '#4369B2',
       blue2: '#598AE7',
