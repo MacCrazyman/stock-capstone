@@ -27,7 +27,8 @@ const Indexes = () => {
           <input onChange={(e) => handleChange(e)} id="nameFilter" type="text" className="rounded-lg px-4 text-back" placeholder="Search company" />
         </div>
       </div>
-      {companies.filter((company) => RegExp(nameFilter).test(company.name.toLowerCase()))
+      {companies.filter((company) => RegExp(nameFilter)
+        .test(company.name.toLowerCase()) || RegExp(nameFilter).test(company.symbol.toLowerCase()))
         .map((company, index) => (
           <Link to={company.symbol} key={company.name} className={`${(index + 2) % 4 === 0 || (index + 3) % 4 === 0 ? 'bg-odd-blue' : 'bg-even-blue'} grid grid-rows-3 relative`}>
             <div className="absolute top-0 right-0 p-2">&#10162;</div>
