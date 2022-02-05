@@ -16,7 +16,9 @@ Project created using `create-react-app` and implementing `react-redux` to retre
 
 ## Live Demo
 
-[Live Demo Link](https://books-store-maccrazyman.herokuapp.com/)
+[Live Demo Link](https://stock-capstone.herokuapp.com/)
+
+[Explanatory video](https://drive.google.com/file/d/1tu6x65IFPv1Dd-NZyDcdi3JUgugpPrqK/view)
 
 
 ## Getting Started
@@ -31,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 * Copy the repo link and clone it in your local machine
 * You can execute the following command in your git bash:
     ```` 
-    git clone https://github.com/MacCrazyman/space-traveler-hub-react.git
+    git clone https://github.com/MacCrazyman/stock-capstone.git
     ````
 
 ### Install
@@ -50,7 +52,7 @@ To get a local copy up and running follow these simple example steps.
     ````
     npm start
     ````
-* You can also open the [Heroku deployment](https://books-store-maccrazyman.herokuapp.com/) to see a live version of the webpage.
+* You can also open the [Heroku deployment](https://stock-capstone.herokuapp.com/) to see a live version of the webpage.
 
 
 
