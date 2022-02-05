@@ -23,6 +23,7 @@ body {
   color: white;
   overflow-x: hidden;
   min-width: 435px;
+  word-wrap: break-word;
 }
 
 code {
